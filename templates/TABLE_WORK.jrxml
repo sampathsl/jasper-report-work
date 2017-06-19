@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-06-19T23:16:28 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TABLE_WORK" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f76a1746-9980-41df-9ebb-05d6187e3258">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="TEST"/>
+	<subDataset name="ItemDataSource" uuid="9b8f91f9-3c23-43c8-bace-f5e947c43b00">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="sampleOne" class="java.lang.String"/>
+		<field name="sampleTwo" class="java.lang.String"/>
+		<field name="sampleThree" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="ItemDataSource" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="displaySecondColumn" class="java.lang.Boolean">
+		<defaultValueExpression><![CDATA[true]]></defaultValueExpression>
+	</parameter>
+	<parameter name="displayRecordNumber" class="java.lang.Boolean">
+		<defaultValueExpression><![CDATA[true]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="sampleTwo" class="java.lang.String">
+		<fieldDescription><![CDATA[sampleTwo]]></fieldDescription>
+	</field>
+	<field name="sampleThree" class="java.lang.String">
+		<fieldDescription><![CDATA[sampleThree]]></fieldDescription>
+	</field>
+	<field name="sampleOne" class="java.lang.String">
+		<fieldDescription><![CDATA[sampleOne]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="184" splitType="Stretch">
+			<textField>
+				<reportElement x="280" y="20" width="100" height="30" uuid="147059f9-3e54-48fe-846f-94f4439f4440"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sampleOne}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="150" y="20" width="100" height="30" uuid="af41fca6-37b4-458b-9562-916c43a88198"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[SAMPLE ONE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="60" width="100" height="30" uuid="a1e47069-344c-4225-8277-ff8b15be4ae7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sampleTwo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="150" y="60" width="100" height="30" uuid="072e7d8a-bd43-47db-8c85-bd830782d4f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[SAMPLE TWO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="100" width="100" height="30" uuid="3bd739dd-eb49-44d2-bc63-df75e6e5a30a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sampleThree}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="150" y="100" width="100" height="30" uuid="7fe1a06e-52e2-4d81-8253-4a20c02ade7e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[SAMPLE THREE]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
