@@ -1,2 +1,3 @@
 # jasper-report-work
-Sample jasper report project using JRBeanCollectionDataSource data adapter
+	1) Sample jasper report project using JRBeanCollectionDataSource data adapter
+	2) Sample dynamic data table jasper report
