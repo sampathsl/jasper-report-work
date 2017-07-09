@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dynamic-table" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ad337019-2752-4a88-ae82-375891aaa228">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="TEST"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="sampleTwo" class="java.lang.String">
+		<fieldDescription><![CDATA[sampleTwo]]></fieldDescription>
+	</field>
+	<field name="sampleThree" class="java.lang.String">
+		<fieldDescription><![CDATA[sampleThree]]></fieldDescription>
+	</field>
+	<field name="sampleOne" class="java.lang.String">
+		<fieldDescription><![CDATA[sampleOne]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="250" splitType="Stretch">
+			<textField>
+				<reportElement stretchType="ElementGroupBottom" x="280" y="102" width="100" height="15" uuid="2bc29d1b-d037-4247-ad55-53b203d32039">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{sampleOne}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="ElementGroupBottom" x="180" y="102" width="100" height="15" uuid="8e21b801-8caf-44e4-83f3-4bbe33f40f97"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Sample One]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="ElementGroupBottom" x="280" y="119" width="100" height="15" isRemoveLineWhenBlank="true" uuid="720475a8-d2b3-4d36-a098-43dd084a52df">
+					<printWhenExpression><![CDATA[$F{sampleTwo} != null && !$F{sampleTwo}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{sampleTwo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="ElementGroupBottom" x="179" y="119" width="100" height="15" isRemoveLineWhenBlank="true" uuid="2e6aa449-922e-4b41-81e8-ffaf1b583109">
+					<printWhenExpression><![CDATA[$F{sampleTwo} != null && !$F{sampleTwo}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Sample Two]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="ElementGroupBottom" x="280" y="136" width="100" height="15" uuid="7a98c111-2b5a-4c28-b261-d5b32c912839"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{sampleThree}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="ElementGroupBottom" x="180" y="136" width="100" height="15" uuid="3221163a-6946-424b-9dc7-b3b60585fabd"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Sample Three]]></text>
+			</staticText>
+			<line>
+				<reportElement x="160" y="80" width="240" height="1" uuid="014b516a-6519-4801-84c3-0a4e02ea6b6c"/>
+			</line>
+			<line>
+				<reportElement x="160" y="171" width="241" height="1" uuid="a298c9ea-564e-4f50-a4cb-350aa0760635"/>
+			</line>
+			<line>
+				<reportElement x="400" y="80" width="1" height="37" uuid="d51a5d46-5800-4134-8abf-078b4b8134a9"/>
+			</line>
+			<line>
+				<reportElement x="160" y="80" width="1" height="37" uuid="e21ca192-3608-4f17-8210-7306d58f5608"/>
+			</line>
+			<line>
+				<reportElement x="160" y="133" width="1" height="38" uuid="da4fb61d-9605-436d-a8b4-aa9139b3ac7f"/>
+			</line>
+			<line>
+				<reportElement x="400" y="133" width="1" height="39" uuid="96a99872-12b6-4579-8499-993067a6f278"/>
+			</line>
+			<line>
+				<reportElement x="400" y="117" width="1" height="16" isRemoveLineWhenBlank="true" uuid="8837a9b1-bcf4-4bd4-8e25-6426a315c8d2">
+					<printWhenExpression><![CDATA[$F{sampleTwo} != null && !$F{sampleTwo}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="160" y="117" width="1" height="16" isRemoveLineWhenBlank="true" uuid="6be6485e-ba74-4864-bdac-0eb752fe5e1a">
+					<printWhenExpression><![CDATA[$F{sampleTwo} != null && !$F{sampleTwo}.isEmpty()]]></printWhenExpression>
+				</reportElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
